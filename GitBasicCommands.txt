@@ -57,8 +57,16 @@ $ git status
 -- Push a repository to Bitbucket --
 ------------------------------------
 
-$ git remote add origin https:// Rotsendroid@bitbucket.org/Rotsendroid/repositoryName.git
+$ git remote add origin https:// <username>@bitbucket.org/<username>/<repositoryName>.git
 $ git push -u origin master 
+
+
+-- Push a repository to Github --
+------------------------------------
+
+$ git remote add origin https://github.com/<username>/<repositoryName>.git
+$ git push -u origin master 
+
 
 
 -- Branch --
