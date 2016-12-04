@@ -1,3 +1,4 @@
+------------------------------------------------------------------------------------
 -------------------------------- Git basic commands --------------------------------
 ------------------------------------------------------------------------------------
 
@@ -17,7 +18,7 @@
 
 
 
-
+-----------------
 -- Config user --
 -----------------
 
@@ -25,12 +26,14 @@ $ git config --global user.name "yourName"
 $ git config --global user.email "yourEmail"
 
 
+-----------------------------
 -- Create a new repository --
 -----------------------------
 
 $ git init <directory>
 
 
+------------------------------------------
 -- Import an existing project/directory --
 ------------------------------------------
 
@@ -42,18 +45,21 @@ $ git commit -m "TypeMessage"
 $ git commit -am "TypeMessage"
 
 
+------------------
 -- Show commits --
 ------------------
 
 $ git log --stat
 
 
+-----------------
 -- Show status --
 -----------------
 
 $ git status
 
 
+------------------------------------
 -- Push a repository to Bitbucket --
 ------------------------------------
 
@@ -61,14 +67,15 @@ $ git remote add origin https:// <username>@bitbucket.org/<username>/<repository
 $ git push -u origin master 
 
 
--- Push a repository to Github --
-------------------------------------
+-------------------------------------
+---- Push a repository to Github ----
+-------------------------------------
 
 $ git remote add origin https://github.com/<username>/<repositoryName>.git
 $ git push -u origin master 
 
 
-
+------------
 -- Branch --
 ------------
 
@@ -109,6 +116,7 @@ $ git branch -d <name>
 $ git push origin --delete <name>
 
 
+-------------
 -- git log --
 -------------
 
@@ -123,6 +131,7 @@ $ git log --author="authorName"
 $ git log --grep="regexMatchString"
 
 
+-----------------------
 -- Find HEAD pointer --
 -----------------------
 
@@ -137,6 +146,7 @@ $ ls -la //shows branches
 $ cat master //for master branch
 
 
+--------------
 -- git diff --
 --------------
 
@@ -144,13 +154,14 @@ $ cat master //for master branch
 $ git diff --staged
 
 
+-----------------------------------------
 -- Delete files and track those changes--
 -----------------------------------------
 
 $ git rm <fileName>
 ($ git status)
 
-
+---------------------------
 -- Rename and Move files --
 ---------------------------
 
@@ -159,6 +170,7 @@ $ git mv <initialFile> <renameFile>
 (Move and Rename is the same)
 
 
+---------------------
 -- Undoing changes --
 ---------------------
 
