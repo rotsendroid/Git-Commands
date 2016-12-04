@@ -1,6 +1,23 @@
 -------------------------------- Git basic commands --------------------------------
 ------------------------------------------------------------------------------------
 
+
+--------Repository--------
+
+			^
+			|
+
+
+-------Staging index-------
+
+			^
+			|
+
+-----Working directory-----
+
+
+
+
 -- Config user --
 -----------------
 
@@ -152,3 +169,10 @@ $ git reset HEAD <fileName>
 
 $ git commit --amend -m "TypeMessage" 
 
+
+* Retrieve an old version of a file
+
+$ git checkout <SHAValue> -- <fileName>
+
+ (file at staging)
+ then commit
