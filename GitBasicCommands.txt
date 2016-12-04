@@ -3,15 +3,15 @@
 
 
 --------Repository--------
-
-			^
-			|
+ 
+            ^
+            |
 
 
 -------Staging index-------
 
-			^
-			|
+            ^
+            |
 
 -----Working directory-----
 
@@ -182,5 +182,5 @@ $ git commit --amend -m "TypeMessage"
 
 $ git checkout <SHAValue> -- <fileName>
 
- (file at staging)
- then commit
+ (file at staging, then commit)
+ 
