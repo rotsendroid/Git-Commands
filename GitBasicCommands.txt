@@ -1,0 +1,154 @@
+-------------------------------- Git basic commands --------------------------------
+------------------------------------------------------------------------------------
+
+-- Config user --
+-----------------
+
+$ git config --global user.name "yourName"
+$ git config --global user.email "yourEmail"
+
+
+-- Create a new repository --
+-----------------------------
+
+$ git init <directory>
+
+
+-- Import an existing project/directory --
+------------------------------------------
+
+$ git init
+$ git add .		//. -> all files
+$ git commit -m "TypeMessage"
+
+* Add and commit in one command
+$ git commit -am "TypeMessage"
+
+
+-- Show commits --
+------------------
+
+$ git log --stat
+
+
+-- Show status --
+-----------------
+
+$ git status
+
+
+-- Push a repository to Bitbucket --
+------------------------------------
+
+$ git remote add origin https:// Rotsendroid@bitbucket.org/Rotsendroid/repositoryName.git
+$ git push -u origin master 
+
+
+-- Branch --
+------------
+
+* Create new branch
+
+$ git branch <name>
+
+
+* Switch branch
+
+$ git checkout <name>
+
+
+* Create and Switch
+
+$ git checkout -b <name>
+
+
+* Show current branch
+
+$ git branch
+
+
+* Push remote branch
+
+$ git push origin <name>
+
+
+* Delete branch
+
+** Local
+
+$ git branch -d <name>
+
+
+** Remote
+
+$ git push origin --delete <name>
+
+
+-- git log --
+-------------
+
+$ git log -n <numberOfCommits>
+
+$ git log --since=yyyy-mm-dd
+
+$ git log --until=yyyy-mm-dd
+
+$ git log --author="authorName"
+
+$ git log --grep="regexMatchString"
+
+
+-- Find HEAD pointer --
+-----------------------
+
+$ ls -la
+$ cd .git
+$ ls -la
+$ cat HEAD
+$ cd refs
+$ ls -la
+$ cd heads
+$ ls -la //shows branches
+$ cat master //for master branch
+
+
+-- git diff --
+--------------
+
+* Differences between staging and reppository
+$ git diff --staged
+
+
+-- Delete files and track those changes--
+-----------------------------------------
+
+$ git rm <fileName>
+($ git status)
+
+
+-- Rename and Move files --
+---------------------------
+
+$ git mv <initialFile> <renameFile>
+
+(Move and Rename is the same)
+
+
+-- Undoing changes --
+---------------------
+
+* Working
+
+$ git checkout -- <modFileName>
+
+
+* Staging
+
+$ git reset HEAD <fileName>
+
+
+* Repository
+ (edit the last commit-tip)
+
+$ git commit --amend -m "TypeMessage" 
+
